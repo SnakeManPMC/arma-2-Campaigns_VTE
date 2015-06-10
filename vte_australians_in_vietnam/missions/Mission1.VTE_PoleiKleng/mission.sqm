@@ -1,0 +1,674 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_weapons_cfg",
+		"vte_terrain_cfg",
+		"camisc3",
+		"vte_land_cfg",
+		"CAMisc",
+		"CAWheeled",
+		"CATracked2_T34"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_weapons_cfg",
+		"camisc3",
+		"vte_land_cfg",
+		"CAMisc",
+		"CAWheeled",
+		"CATracked2_T34",
+		"vte_terrain_cfg"
+	};
+	randomSeed=12270548;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5384.6392,5.5250001,9420.9307};
+					azimut=-90.667702;
+					id=0;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="a";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5384.543,5.5250001,9423.2813};
+					azimut=175;
+					id=10;
+					side="WEST";
+					vehicle="VTE_AuSAS6";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init="removeallweapons this";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=32;
+		class Item0
+		{
+			position[]={5383.1743,5.5250001,9420.2266};
+			azimut=-90.667709;
+			id=1;
+			side="EMPTY";
+			vehicle="VTE_WeaponBoxUS";
+			leader=1;
+			skill=0.60000002;
+			init="clearweaponcargo this;this addweaponcargo [""VTE_L1A1"",7]; this addweaponcargo [""VTE_MPL"",3]; this addweaponcargo [""VTE_ex41"",1]";
+		};
+		class Item1
+		{
+			position[]={5162.6152,5.5250001,9412.041};
+			azimut=-180.142;
+			id=2;
+			side="EMPTY";
+			vehicle="SKODAWreck";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={5156.1406,5.5250001,9431.9375};
+			azimut=-86.047997;
+			id=3;
+			side="EMPTY";
+			vehicle="T72Wreck";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={5262.27,5.5250001,9414.959};
+			azimut=88.298172;
+			id=4;
+			side="EMPTY";
+			vehicle="VTE_jeep";
+			leader=1;
+			skill=0.60000002;
+			health=0.39650211;
+		};
+		class Item4
+		{
+			position[]={5262.4795,5.5250001,9415.3379};
+			azimut=88.298203;
+			id=5;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={5262.5132,5.5250001,9414.6182};
+			azimut=88.298172;
+			id=6;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={5338.9717,5.5250001,9411.6016};
+			id=7;
+			side="EMPTY";
+			vehicle="UAZ_INS";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			health=0.39650211;
+		};
+		class Item7
+		{
+			position[]={5336.0513,5.5250001,9413.2637};
+			azimut=88.298203;
+			id=8;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={5336.041,5.5250001,9412.3682};
+			azimut=88.298172;
+			id=9;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={5384.8638,5.5250001,9421.9717};
+			azimut=175;
+			id=11;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={5319.5972,5.5250001,9427.7256};
+			azimut=175;
+			id=12;
+			side="EMPTY";
+			vehicle="Barrels";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={5315.7334,5.5250001,9406.0127};
+			azimut=175;
+			id=13;
+			side="EMPTY";
+			vehicle="Barrel1";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={5322.4692,5.5250001,9416.8525};
+			azimut=175;
+			id=14;
+			side="EMPTY";
+			vehicle="Barrel5";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={5387.3188,5.5250001,9420.9639};
+			azimut=88.08532;
+			id=15;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={5384.458,5.5250001,9424.1533};
+			azimut=179.71951;
+			id=16;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={5384.5894,5.5250001,9418.5303};
+			azimut=181.11386;
+			id=17;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={5387.2061,5.5250001,9424.5039};
+			azimut=88.08532;
+			id=18;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={5387.481,5.5250001,9417.5859};
+			azimut=88.08532;
+			id=19;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={5388.436,5.5250001,9418.4336};
+			azimut=181.11386;
+			id=20;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={5387.9326,5.5250001,9424.1514};
+			azimut=179.71951;
+			id=21;
+			side="EMPTY";
+			vehicle="Fence_corrugated_plate";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={5386.1475,5.5250001,9421.3066};
+			azimut=146.16461;
+			id=22;
+			side="EMPTY";
+			vehicle="Land_CamoNet_NATO";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={5382.002,5.5250001,9421.1914};
+			azimut=268.082;
+			id=23;
+			side="EMPTY";
+			vehicle="Land_BagFenceLong";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={5382.0674,5.5250001,9419.5107};
+			azimut=268.082;
+			id=24;
+			side="EMPTY";
+			vehicle="Land_BagFenceLong";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={5381.938,5.5250001,9422.9043};
+			azimut=268.082;
+			id=25;
+			side="EMPTY";
+			vehicle="Land_BagFenceLong";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={5381.8896,5.5250001,9424.376};
+			azimut=268.082;
+			id=26;
+			side="EMPTY";
+			vehicle="Land_BagFenceLong";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={5334.8682,5.5250001,9422.2432};
+			azimut=88.298172;
+			id=27;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={5338.3877,5.5250001,9417.5498};
+			azimut=88.298203;
+			id=28;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+			text="t";
+		};
+		class Item27
+		{
+			position[]={5306.4307,5.5250001,9425.1465};
+			azimut=88.298172;
+			id=29;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item28
+		{
+			position[]={5306.0103,5.5250001,9414.0752};
+			azimut=88.298172;
+			id=30;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item29
+		{
+			position[]={5290.3657,5.5250001,9426.7178};
+			azimut=88.298203;
+			id=31;
+			side="EMPTY";
+			vehicle="TargetEpopup";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item30
+		{
+			position[]={5260.3247,5.5250001,9427.5293};
+			azimut=88.298172;
+			id=32;
+			side="EMPTY";
+			vehicle="TargetE";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item31
+		{
+			position[]={5298.7144,5.5250001,9428.585};
+			azimut=175;
+			id=33;
+			side="EMPTY";
+			vehicle="T34";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="z";
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={5383.3267,5.5250001,9420.668};
+			name="s";
+			text="Start";
+			type="mil_start";
+			angle=270;
+		};
+		class Item1
+		{
+			position[]={5315.5869,5.5250001,9419.5742};
+			name="au";
+			text="Targets";
+			type="mil_destroy";
+			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=11;
+		class Item0
+		{
+			position[]={5385.5073,5.5250001,9421.5029};
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			expActiv="hint ""Before you go into the war you have to get to learn your weapons. Go to the crate""";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={5385.54,5.5250001,9420.5986};
+			activationBy="VEHICLE";
+			timeoutMin=20;
+			timeoutMid=20;
+			timeoutMax=20;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			expActiv="hint ""These guns, the L1A1 SLR Rifle, MPL and EX-41 grenade launcher are your weapons. You'll have them under your disposal in every mission.""";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={5393.6602,5.5250001,9419.2764};
+			activationBy="VEHICLE";
+			timeoutMin=25;
+			timeoutMid=25;
+			timeoutMax=25;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			expActiv="hint ""So good luck. This mission is ending automatically after you hit enough targets.""";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={5391.2363,5.5250001,9418.7119};
+			activationBy="VEHICLE";
+			timeoutMin=270;
+			timeoutMid=270;
+			timeoutMax=270;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={5361.0249,5.5250001,9418.7822};
+			a=5;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Get back to the range!";
+			};
+		};
+		class Item5
+		{
+			position[]={5408.2285,5.5250001,9417.9785};
+			a=5;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Get back to the range!";
+			};
+		};
+		class Item6
+		{
+			position[]={5385.3296,5.5250001,9395.6816};
+			a=5;
+			angle=90.044983;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Get back to the range!";
+			};
+		};
+		class Item7
+		{
+			position[]={5379.103,5.5250001,9442.4844};
+			a=5;
+			angle=-90.59948;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Get back to the range!";
+			};
+		};
+		class Item8
+		{
+			position[]={5395.7017,5.5250001,9409.749};
+			activationBy="VEHICLE";
+			timeoutMin=25;
+			timeoutMid=40;
+			timeoutMax=50;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			expActiv="a addweapon ""VTE_90mmrecoiless""; a addmagazine ""VTE_90mmrocket""; hint ""Shoot the T34 tank with your 90mm recoilless launcher you received"";a addmagazine ""VTE_90mmrocket"";a addmagazine ""VTE_90mmrocket"";a addmagazine ""VTE_90mmrocket""";
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Shoot the T34 tank!";
+			};
+		};
+		class Item9
+		{
+			position[]={5349.8018,5.5250001,9411.7988};
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive t";
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Good shot.";
+			};
+		};
+		class Item10
+		{
+			position[]={5319.1558,5.5250001,9414.1143};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive z";
+			class Effects
+			{
+				track="VTE_kemppainen";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="That tank is destroyed. You done well.";
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=8357896;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=5135113;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=8360371;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

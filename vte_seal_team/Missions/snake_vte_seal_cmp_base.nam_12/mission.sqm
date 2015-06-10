@@ -1,0 +1,250 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=227843;
+	class Intel
+	{
+		briefingName="SEAL Base";
+		month=1;
+		day=1;
+		hour=6;
+		minute=0;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={546.00928,6.7049999,6754.3574};
+					id=0;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1;
+					text="seal1";
+					init="seals1=group this; seals1 setBehaviour ""SAFE"";";
+				};
+				class Item1
+				{
+					position[]={551.00928,6.704092,6749.3574};
+					id=1;
+					side="WEST";
+					vehicle="VTE_sealrto";
+					rank="LIEUTENANT";
+					skill=1;
+					text="seal4";
+				};
+				class Item2
+				{
+					position[]={541.00928,6.704422,6749.3574};
+					id=2;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					rank="SERGEANT";
+					skill=1;
+					text="seal3";
+				};
+				class Item3
+				{
+					position[]={536.00928,6.704422,6749.3574};
+					id=3;
+					side="WEST";
+					vehicle="VTE_seal";
+					rank="SERGEANT";
+					skill=1;
+					text="seal2";
+				};
+				class Item4
+				{
+					position[]={556.00928,6.6995921,6749.3574};
+					id=4;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					rank="SERGEANT";
+					skill=1;
+					text="seal5";
+				};
+				class Item5
+				{
+					position[]={561.00928,6.6950922,6749.3574};
+					id=5;
+					side="WEST";
+					vehicle="VTE_sealgl";
+					rank="SERGEANT";
+					skill=1;
+					text="seal6";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={545.98645,6.7049999,6759.1855};
+			name="start";
+			text="@STR_START";
+			type="mil_start";
+			colorName="ColorGreen";
+		};
+	};
+	class Sensors
+	{
+		items=7;
+		class Item0
+		{
+			position[]={919.86884,2.8666589,6888.5898};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			type="END1";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={929.42188,2.8666589,6871.228};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			type="END2";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={937.12994,2.8666589,6858.2134};
+			a=0;
+			b=0;
+			activationBy="CHARLIE";
+			type="END3";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={944.50928,2.8666589,6845.1978};
+			a=0;
+			b=0;
+			activationBy="DELTA";
+			type="END4";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={953.3042,2.8666589,6833.2686};
+			a=0;
+			b=0;
+			activationBy="ECHO";
+			type="END5";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={960.35498,2.8666589,6821.0127};
+			a=0;
+			b=0;
+			activationBy="FOXTROT";
+			type="END6";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={966.97638,2.8666589,6808.7554};
+			a=0;
+			b=0;
+			activationBy="GOLF";
+			type="LOOSE";
+			age="UNKNOWN";
+			text="null";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=1444867;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=16355843;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=11219971;
+	class Intel
+	{
+	};
+};

@@ -1,0 +1,763 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg",
+		"vte_sea_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_sea_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=3561167;
+	class Intel
+	{
+		month=12;
+		day=22;
+		hour=2;
+		minute=5;
+	};
+	class Groups
+	{
+		items=6;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4770.9951,4.4000001,4791.8447};
+					azimut=-152.33263;
+					id=2;
+					side="WEST";
+					vehicle="VTE_AuSAS5";
+					skill=0.60000002;
+					init="this moveincargo e; this setface ""face4""";
+				};
+				class Item1
+				{
+					position[]={4769.8042,4.4000001,4788.7144};
+					azimut=-152.33299;
+					id=0;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="a";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveincargo e; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addweapon ""VTE_L1A1"";this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addweapon ""VTE_90mmrecoiless""; this addmagazine ""VTE_90mmrocket""; this addmagazine ""VTE_90mmrocket""; this addweapon ""itemradio""";
+				};
+				class Item2
+				{
+					position[]={4769.603,4.4000001,4792.8296};
+					azimut=-152.33263;
+					id=3;
+					side="WEST";
+					vehicle="VTE_AuSAS6";
+					skill=0.60000002;
+					init="this moveincargo e; this setface ""face7""";
+				};
+				class Item3
+				{
+					position[]={4772.0425,4.4000001,4791.0776};
+					azimut=-152.33263;
+					id=1;
+					side="WEST";
+					vehicle="VTE_AuSAS3";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this moveincargo e; this setface ""face3""";
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4768.4663,4.4000001,4786.4893};
+					combatMode="GREEN";
+					description="Wait for ships";
+					synchronizations[]={2};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4767.3472,4.4000001,4783.9814};
+					description="Destroy the ships";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={4959.7852,0.50816274,4327.2451};
+					azimut=330;
+					special="NONE";
+					id=4;
+					side="EAST";
+					vehicle="VTE_sampan";
+					skill=0.60000002;
+					text="o1";
+				};
+				class Item1
+				{
+					position[]={4973.6128,0.74212098,4310.3828};
+					azimut=330;
+					special="CARGO";
+					id=7;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={4961.4336,0.54016793,4309.6289};
+					azimut=330;
+					special="CARGO";
+					id=9;
+					side="EAST";
+					vehicle="VTE_vcofficer7";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46097279;
+				};
+				class Item3
+				{
+					position[]={4973.7544,0.87606382,4314.0698};
+					azimut=330;
+					special="CARGO";
+					id=12;
+					side="EAST";
+					vehicle="VTE_vcmg";
+					skill=0.46097279;
+				};
+				class Item4
+				{
+					position[]={4983.6514,0.67865193,4310.208};
+					azimut=330;
+					special="CARGO";
+					id=13;
+					side="EAST";
+					vehicle="VTE_vcgrenadier2";
+					skill=0.46097279;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4657.2256,-6.8000002,4851.9609};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4955.1069,0.78072816,4302.3916};
+					azimut=330;
+					special="NONE";
+					id=5;
+					side="EAST";
+					vehicle="VTE_sampan";
+					leader=1;
+					skill=0.60000002;
+					text="o2";
+				};
+				class Item1
+				{
+					position[]={4995.9175,0.73223984,4307.5532};
+					azimut=330;
+					special="CARGO";
+					id=10;
+					side="EAST";
+					vehicle="VTE_vcmedic5";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={4960.8574,0.90443933,4300.1714};
+					azimut=330;
+					special="CARGO";
+					id=8;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={4991.0737,0.54358637,4298.9028};
+					azimut=330;
+					special="CARGO";
+					id=11;
+					side="EAST";
+					vehicle="VTE_vcmg";
+					skill=0.46097279;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4660.5654,1.0965089,4846.9736};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4968.3604,0.74890983,4291.5483};
+					azimut=330;
+					special="NONE";
+					id=6;
+					side="EAST";
+					vehicle="VTE_vcsampanbig";
+					leader=1;
+					skill=0.60000002;
+					text="o";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4681.978,-6.8000002,4827.3721};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4730.9053,4.5734696,4511.21};
+					azimut=-152.33299;
+					id=14;
+					side="EAST";
+					vehicle="VTE_vcsoldier6";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={4732.7969,4.5083704,4512.2773};
+					azimut=-152.33299;
+					id=15;
+					side="EAST";
+					vehicle="VTE_vcsoldier14";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4730.1582,4.6365128,4509.0913};
+					combat="SAFE";
+					synchronizations[]={0};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4603.1416,3.6963258,4791.1382};
+					speed="FULL";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4585.3438,4.4000001,4837.2974};
+					azimut=-217.84227;
+					id=18;
+					side="WEST";
+					vehicle="VTE_AuSAS5";
+					skill=0.60000002;
+					init="this moveincargo e; this setface ""face4""";
+				};
+				class Item1
+				{
+					position[]={4587.6978,4.4000001,4834.9165};
+					azimut=-217.84236;
+					id=16;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""Binocular"";  this addweapon ""ItemMap""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addweapon ""VTE_L1A1"";this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addweapon ""VTE_90mmrecoiless""; this addmagazine ""VTE_90mmrocket""; this addmagazine ""VTE_90mmrocket""";
+				};
+				class Item2
+				{
+					position[]={4583.8711,4.4000001,4836.4385};
+					azimut=-217.84236;
+					id=19;
+					side="WEST";
+					vehicle="VTE_AuSAS6";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={4586.4741,4.4000001,4837.9321};
+					azimut=-217.84236;
+					id=17;
+					side="WEST";
+					vehicle="VTE_AuSAS3";
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4589.168,4.4000001,4832.7754};
+					combatMode="GREEN";
+					description="Wait for ships";
+					synchronizations[]={1};
+					class Effects
+					{
+					};
+					timeoutMin=30;
+					timeoutMid=60;
+					timeoutMax=120;
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4592.2012,4.4000001,4830.6982};
+					combatMode="RED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={4767.1494,4.4000001,4786.751};
+			name="s";
+			text="Start";
+			type="mil_start";
+			angle=213.08694;
+		};
+		class Item1
+		{
+			position[]={4712.3521,0.60826236,4738.2866};
+			name="au";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=8;
+		class Item0
+		{
+			position[]={4746.0249,1.0360234,4720.6816};
+			a=300;
+			b=300;
+			activationBy="WEST";
+			activationType="EAST D";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				voice="VTE_man_viet_notice10";
+			};
+			synchronizations[]={0,1,2};
+		};
+		class Item1
+		{
+			position[]={4972.9468,7.4915147,4683.0376};
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive o";
+			class Effects
+			{
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Weapon cargo vessel is sleeping with the fishes now!";
+			};
+		};
+		class Item2
+		{
+			position[]={4911.209,7.9319272,4687.3545};
+			timeoutMin=20;
+			timeoutMid=21;
+			timeoutMax=22;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive o";
+			expActiv="a sidechat ""Good job everyone, the ships are sunken!""";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={4919.4121,7.0632706,4655.8374};
+			repeating=1;
+			timeoutMin=26;
+			timeoutMid=27;
+			timeoutMax=28;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expCond="not alive o";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={4957.3696,7.75,4771.144};
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive o1";
+			class Effects
+			{
+				soundDet="CA_Expl1";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Sampan down!";
+			};
+		};
+		class Item5
+		{
+			position[]={4908.6919,7.75,4770.6567};
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive o2";
+			class Effects
+			{
+				soundDet="CA_Expl1";
+				titleType="TEXT";
+				titleEffect="PLAIN DOWN";
+				title="Sampan down!";
+			};
+		};
+		class Item6
+		{
+			position[]={4769.0605,4.4000001,4787.6318};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				soundEnv="VTE_jungle_isle_amb03";
+			};
+		};
+		class Item7
+		{
+			position[]={4750.5962,0.33258924,4779.4585};
+			activationBy="ANY";
+			timeoutMax=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg",
+		"vte_chara_cfg",
+		"vte_sea_cfg",
+		"vte_land_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_sea_cfg",
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=9339523;
+	class Intel
+	{
+		month=12;
+		day=21;
+		hour=18;
+		minute=5;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={4945.8608,0.91727245,4360.3618};
+					azimut=330;
+					special="NONE";
+					id=0;
+					side="EAST";
+					vehicle="VTE_sampan";
+					skill=0.60000002;
+					text="o1";
+				};
+				class Item1
+				{
+					position[]={4959.6885,0.60635132,4343.4995};
+					azimut=330;
+					special="CARGO";
+					id=3;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={4947.5093,0.89068049,4342.7456};
+					azimut=330;
+					special="CARGO";
+					id=5;
+					side="EAST";
+					vehicle="VTE_vcofficer7";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46097279;
+				};
+				class Item3
+				{
+					position[]={4959.8301,0.48931164,4347.1865};
+					azimut=330;
+					special="CARGO";
+					id=8;
+					side="EAST";
+					vehicle="VTE_vcmg";
+					skill=0.46097279;
+				};
+				class Item4
+				{
+					position[]={4969.7271,0.77282035,4343.3247};
+					azimut=330;
+					special="CARGO";
+					id=9;
+					side="EAST";
+					vehicle="VTE_vcgrenadier2";
+					skill=0.46097279;
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4941.1826,0.836555,4335.5083};
+					azimut=330;
+					special="NONE";
+					id=1;
+					side="EAST";
+					vehicle="VTE_sampan";
+					leader=1;
+					skill=0.60000002;
+					text="o2";
+				};
+				class Item1
+				{
+					position[]={4981.9932,0.737463,4340.6699};
+					azimut=330;
+					special="CARGO";
+					id=6;
+					side="EAST";
+					vehicle="VTE_vcmedic5";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={4946.9331,0.66429979,4333.2881};
+					azimut=330;
+					special="CARGO";
+					id=4;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					player="PLAYER COMMANDER";
+					skill=0.60000002;
+					init="this exec ""intro.sqs""";
+				};
+				class Item3
+				{
+					position[]={4977.1494,0.98204386,4332.0195};
+					azimut=330;
+					special="CARGO";
+					id=7;
+					side="EAST";
+					vehicle="VTE_vcmg";
+					skill=0.46097279;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4954.436,0.67673331,4324.665};
+					azimut=330;
+					special="NONE";
+					id=2;
+					side="EAST";
+					vehicle="VTE_vcsampanbig";
+					leader=1;
+					skill=0.60000002;
+					text="o";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={4974.0068,0.65783322,4338.146};
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=4;
+			class Effects
+			{
+				track="VTE_fortunateson";
+			};
+		};
+		class Item1
+		{
+			position[]={4966.0718,0.55675846,4332.1953};
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=20;
+			timeoutMid=21;
+			timeoutMax=22;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			idVehicle=4;
+			class Effects
+			{
+				track="VTE_fortunateson";
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=3160569;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=12113876;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

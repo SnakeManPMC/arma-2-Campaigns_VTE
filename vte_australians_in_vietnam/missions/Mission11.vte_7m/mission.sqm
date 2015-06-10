@@ -1,0 +1,2225 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg",
+		"CA_Modules_ARTY",
+		"caweapons"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"CA_Modules_ARTY",
+		"caweapons",
+		"vte_terrain_cfg"
+	};
+	randomSeed=14199996;
+	class Intel
+	{
+		day=16;
+		hour=8;
+		minute=5;
+	};
+	class Groups
+	{
+		items=16;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={12521.365,9.7955675,6656.0874};
+					azimut=-56.812874;
+					id=0;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="a";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveingunner i; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addweapon ""VTE_L1A1"";this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addweapon ""itemradio""; this addweapon ""itemcompass""";
+					synchronizations[]={4,3};
+				};
+				class Item1
+				{
+					position[]={12515.531,8.9722691,6649.9282};
+					azimut=17.150085;
+					id=1;
+					side="WEST";
+					vehicle="VTE_AuSAS6";
+					skill=0.60000002;
+					init="this setface ""face7""; this moveincargo i";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={12501.994,7.7920518,6651.2754};
+					azimut=-180.62692;
+					id=3;
+					side="LOGIC";
+					vehicle="BIS_ARTY_Virtual_Artillery";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={0};
+				};
+				class Item1
+				{
+					position[]={12505.78,7.5500002,6643.4238};
+					azimut=-180.62692;
+					id=4;
+					side="LOGIC";
+					vehicle="BIS_ARTY_Logic";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					synchronizations[]={0};
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12380.413,6.6500001,12204.411};
+					azimut=197.77699;
+					id=5;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={12378.377,6.6500001,12209.116};
+					azimut=320;
+					special="NONE";
+					id=6;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					skill=0.60000002;
+					text="z";
+				};
+				class Item1
+				{
+					position[]={12382.473,6.6500001,12204.766};
+					azimut=320;
+					special="NONE";
+					id=8;
+					side="EAST";
+					vehicle="VTE_vcgrenadier";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={12381.682,6.6500001,12207.403};
+					azimut=320;
+					special="NONE";
+					id=9;
+					side="EAST";
+					vehicle="VTE_vcrpg4";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={12383.195,6.6500001,12207.636};
+					azimut=320;
+					special="NONE";
+					id=10;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={12382.563,6.6500001,12207.575};
+					azimut=320;
+					special="NONE";
+					id=11;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					skill=0.60000002;
+				};
+				class Item5
+				{
+					position[]={12383.98,6.6500001,12209.055};
+					azimut=320;
+					special="NONE";
+					id=12;
+					side="EAST";
+					vehicle="VTE_vcsoldier5";
+					skill=0.60000002;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12375.93,6.6500001,12211.85};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12395.385,6.6500001,12098.704};
+					azimut=320;
+					special="NONE";
+					id=7;
+					side="EAST";
+					vehicle="VTE_vcmg4";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12507.677,8.9394894,6664.853};
+					azimut=139.37306;
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="VTE_Armyofficer";
+					leader=1;
+					skill=0.60000002;
+					text="b";
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={12053.847,6.6500001,12583.553};
+					azimut=320;
+					special="NONE";
+					id=14;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					skill=0.60000002;
+					text="z2";
+				};
+				class Item1
+				{
+					position[]={12058.665,6.6500001,12582.072};
+					azimut=320;
+					special="NONE";
+					id=15;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={12059.45,6.6500001,12583.492};
+					azimut=320;
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="VTE_vcsoldier5";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={12314.749,6.6500001,12184.979};
+					azimut=320;
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					skill=0.60000002;
+					text="z1";
+				};
+				class Item1
+				{
+					position[]={12319.567,6.6500001,12183.498};
+					azimut=320;
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={12320.353,6.6500001,12184.918};
+					azimut=320;
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="VTE_vcsoldier5";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12233.399,7.2158852,12182.266};
+					azimut=112.26979;
+					id=20;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12237.286,6.9442329,12181.447};
+					azimut=296.93399;
+					id=21;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+					text="e";
+				};
+			};
+		};
+		class Item10
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12237.898,6.9680214,12183.697};
+					azimut=228.67793;
+					id=22;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12234.115,7.0784616,12178.993};
+					azimut=408.2403;
+					id=23;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item12
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12404.06,6.6500001,12249.684};
+					azimut=112.26979;
+					id=24;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item13
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12407.946,6.6500001,12248.865};
+					azimut=296.93399;
+					id=25;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+					text="oo";
+				};
+			};
+		};
+		class Item14
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12408.559,6.6500001,12251.115};
+					azimut=228.67793;
+					id=26;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item15
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12404.775,14.834972,12246.411};
+					azimut=408.2403;
+					id=27;
+					side="CIV";
+					vehicle="VTE_villager3";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={12522.78,9.7146378,6651.4976};
+			azimut=-13.251514;
+			id=2;
+			side="EMPTY";
+			vehicle="D30_Ins";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="i";
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={12520.381,9.7514877,6657.0981};
+			name="r";
+			text="Start";
+			type="mil_start";
+			angle=3.7628164;
+		};
+		class Item1
+		{
+			position[]={12378.567,6.6500001,12208.267};
+			name="Auf";
+			text="Target";
+			type="mil_destroy";
+			colorName="ColorBlack";
+		};
+		class Item2
+		{
+			position[]={12313.843,6.6500001,12182.16};
+			name="au";
+			text="BM-21 and Officer";
+			type="mil_destroy";
+			colorName="ColorRed";
+		};
+		class Item3
+		{
+			position[]={12054.37,6.6500001,12582.356};
+			name="f_2";
+			text="Target";
+			type="mil_destroy";
+			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=10;
+		class Item0
+		{
+			position[]={12519.602,6.6500001,12141.114};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive z";
+			expActiv="b globalchat ""Direct hit, additional target Chau Doc Street is pounded, move on to the next target.""";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={12073.026,6.6500001,12580.127};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive z2";
+			expActiv="b globalchat ""Direct hit, Ap Vinh Phu is pounded, move on to the next village""";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={12399.855,14.782146,12240.445};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive z1";
+			expActiv="b globalchat ""Direct hit, the town centre is pounded, the officer killed and the artillery destroyed. That was great.""";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={11419.205,0.34916753,11580.808};
+			activationType="WEST D";
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive z2";
+			expActiv="b globalchat ""Direct hit, your additional target is pounded, move on to the next target""";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={12515.436,10.203725,6676.8198};
+			angle=-180.627;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=60;
+			timeoutMid=70;
+			timeoutMax=80;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=1;
+			expActiv="b groupchat ""Here is the recon, no incoming artillery fire near the target area, out""";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={12261.979,18.132097,12196.188};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive oo";
+			expActiv="b globalchat ""Civilians are hit, try another angle immediately""";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={12527.85,10.640239,6661.48};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="hint ""This is a artillery gun. You are controlling it. If you do not know how to properly aim the shots, you can read it in the briefing under your notes (by pressing m)""";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={12470.116,6.6500001,12210.524};
+			repeating=1;
+			timeoutMin=6;
+			timeoutMid=7;
+			timeoutMax=8;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expCond="not alive z1";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={6972.2607,12.062298,9946.4277};
+			activationBy="ANY";
+			timeoutMax=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={12529.34,10.696111,6659.7148};
+			activationBy="VEHICLE";
+			timeoutMin=500;
+			timeoutMid=500;
+			timeoutMax=500;
+			interruptable=1;
+			type="END2";
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg",
+		"vte_chara_cfg",
+		"cacharacters2",
+		"CAWheeled"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"cacharacters2",
+		"CAWheeled",
+		"vte_terrain_cfg"
+	};
+	randomSeed=16464852;
+	class Intel
+	{
+		startFog=0.72744262;
+		day=16;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=44;
+		class Item0
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12312.015,6.6500001,12187.015};
+					azimut=479.008;
+					special="NONE";
+					id=0;
+					side="EAST";
+					vehicle="VTE_NVAofficer";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.60000002;
+					init="removeallweapons this";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12426.92,7.0645008,12000.053};
+					azimut=479.008;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="USMC_Soldier";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12305.937,6.6500001,12180.15};
+					azimut=20;
+					special="NONE";
+					id=2;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""; this exec ""intro.sqs""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12306.522,6.6500001,12181.266};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12306.893,6.6500001,12179.612};
+					azimut=20;
+					special="NONE";
+					id=3;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12307.479,6.6500001,12180.728};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item4
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12307.602,6.6500001,12179.342};
+					azimut=20;
+					special="NONE";
+					id=4;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.188,6.6500001,12180.457};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.558,6.6500001,12178.804};
+					azimut=20;
+					special="NONE";
+					id=5;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.144,6.6500001,12179.919};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item6
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.281,6.6500001,12178.469};
+					azimut=20;
+					special="NONE";
+					id=6;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.867,6.6500001,12179.584};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item7
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12310.237,6.6500001,12177.931};
+					azimut=20;
+					special="NONE";
+					id=7;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12310.823,6.6500001,12179.046};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item8
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12310.946,6.6500001,12177.66};
+					azimut=20;
+					special="NONE";
+					id=8;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12311.532,6.6500001,12178.775};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item9
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12311.902,6.6500001,12177.122};
+					azimut=20;
+					special="NONE";
+					id=9;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12312.488,6.6500001,12178.237};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item10
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12312.631,6.6500001,12176.792};
+					azimut=20;
+					special="NONE";
+					id=10;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12313.217,6.7310004,12177.907};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item11
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12313.587,6.6500001,12176.254};
+					azimut=20;
+					special="NONE";
+					id=11;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12314.173,6.7310004,12177.369};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item12
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12314.296,6.6500001,12175.983};
+					azimut=20;
+					special="NONE";
+					id=12;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12314.882,6.6500001,12177.099};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12315.252,6.6500001,12175.445};
+					azimut=20;
+					special="NONE";
+					id=13;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12315.838,6.6500001,12176.561};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item14
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12315.976,6.6500001,12175.11};
+					azimut=20;
+					special="NONE";
+					id=14;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12316.562,6.6500001,12176.226};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item15
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12316.932,6.6500001,12174.572};
+					azimut=20;
+					special="NONE";
+					id=15;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12317.518,6.6500001,12175.688};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item16
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12317.641,6.6500001,12174.302};
+					azimut=20;
+					special="NONE";
+					id=16;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12318.227,6.6500001,12175.417};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item17
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12318.597,6.6500001,12173.764};
+					azimut=20;
+					special="NONE";
+					id=17;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12319.183,6.6500001,12174.879};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item18
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12328.7,6.6500001,12188.485};
+					azimut=-160.54834;
+					special="NONE";
+					id=18;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12328.396,6.6500001,12187.991};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item19
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12327.734,6.6500001,12189.017};
+					azimut=-160.54834;
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12327.517,6.6500001,12188.443};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item20
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12327.061,6.6500001,12189.347};
+					azimut=-157.2269;
+					special="NONE";
+					id=20;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12326.758,6.6500001,12188.706};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item21
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12326.065,6.6500001,12189.806};
+					azimut=-160.54834;
+					special="NONE";
+					id=21;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12325.862,6.6500001,12189.479};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12325.341,6.6500001,12190.138};
+					azimut=-160.54834;
+					special="NONE";
+					id=22;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12325.041,6.6500001,12189.679};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12323.904,6.6500001,12190.713};
+					azimut=-160.54834;
+					special="NONE";
+					id=23;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12323.718,6.6500001,12190.229};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12323.192,6.6500001,12190.979};
+					azimut=-160.54834;
+					special="NONE";
+					id=24;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12322.94,6.6500001,12190.471};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12322.23,6.7310004,12191.507};
+					azimut=-160.54834;
+					special="NONE";
+					id=25;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12321.962,6.7310004,12190.994};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item26
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12321.501,6.7310004,12191.831};
+					azimut=-160.54834;
+					special="NONE";
+					id=26;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12321.393,6.7310004,12191.463};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item27
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12320.535,6.6500001,12192.355};
+					azimut=-160.54834;
+					special="NONE";
+					id=27;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12320.397,6.6500001,12191.994};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item28
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12319.827,6.6500001,12192.624};
+					azimut=-160.54834;
+					special="NONE";
+					id=28;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12319.718,6.6500001,12192.225};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item29
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12318.861,6.6500001,12193.15};
+					azimut=-160.54834;
+					special="NONE";
+					id=29;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12318.792,6.6500001,12192.679};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item30
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12317.23,6.6500001,12193.935};
+					azimut=-160.54834;
+					special="NONE";
+					id=30;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12317.063,6.6500001,12193.578};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item31
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12316.274,6.6500001,12194.467};
+					azimut=-160.54834;
+					special="NONE";
+					id=31;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12316.119,6.6500001,12194.201};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item32
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12315.563,6.6500001,12194.728};
+					azimut=-160.54834;
+					special="NONE";
+					id=32;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12315.244,6.6500001,12194.26};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item33
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12314.605,6.6500001,12195.258};
+					azimut=-160.54834;
+					special="NONE";
+					id=33;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12314.507,6.6500001,12194.768};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item34
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12310.24,6.6500001,12195.348};
+					azimut=113.42907;
+					special="NONE";
+					id=34;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12310.748,6.6500001,12195.065};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item35
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.648,6.6500001,12194.426};
+					azimut=113.42907;
+					special="NONE";
+					id=35;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12310.204,6.6500001,12194.129};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item36
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.332,6.7310004,12193.622};
+					azimut=113.46873;
+					special="NONE";
+					id=36;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.779,6.6500001,12193.309};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item37
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.737,6.7310004,12192.813};
+					azimut=113.42907;
+					special="NONE";
+					id=37;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.169,6.7310004,12192.543};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item38
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.36,6.7310004,12192.11};
+					azimut=113.42907;
+					special="NONE";
+					id=38;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.792,6.7310004,12191.847};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item39
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12304.986,6.6500001,12186.326};
+					azimut=113.42907;
+					special="NONE";
+					id=39;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12305.401,6.6500001,12186.064};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item40
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12304.606,6.6500001,12185.633};
+					azimut=113.42907;
+					special="NONE";
+					id=40;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12305.023,6.6500001,12185.365};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item41
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12304.015,6.7310004,12184.705};
+					azimut=113.42907;
+					special="NONE";
+					id=41;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12304.493,6.7310004,12184.521};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item42
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12303.702,6.7310004,12184.013};
+					azimut=113.42907;
+					special="NONE";
+					id=42;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12304.178,6.7310004,12183.831};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item43
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12303.105,6.6500001,12183.094};
+					azimut=113.42907;
+					special="NONE";
+					id=43;
+					side="EAST";
+					vehicle="VTE_NVAsoldier";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addweapon ""VTE_SKS""";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12303.585,6.6500001,12182.81};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={12315.463,6.6500001,12181.858};
+			azimut=-237.158;
+			special="NONE";
+			id=44;
+			side="EMPTY";
+			vehicle="UAZ_INS";
+			leader=1;
+			skill=0.60000002;
+			init="clearmagazinecargo this";
+		};
+		class Item1
+		{
+			position[]={12314.849,6.6500001,12189.329};
+			azimut=111.223;
+			special="NONE";
+			id=45;
+			side="EMPTY";
+			vehicle="GRAD_INS";
+			leader=1;
+			skill=0.60000002;
+			init="clearmagazinecargo this";
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={12311.853,6.6500001,12189.972};
+			name="f_1";
+			text="Target Center";
+			type="mil_destroy";
+			colorName="ColorRed";
+			angle=159.00787;
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={12322.021,7.0911784,12180.975};
+			activationBy="ANY";
+			timeoutMax=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+			class Effects
+			{
+				track="ToWar";
+			};
+		};
+		class Item1
+		{
+			position[]={12316.421,6.6500001,12184.439};
+			activationBy="EAST";
+			repeating=1;
+			timeoutMin=12;
+			timeoutMid=12;
+			timeoutMax=13;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=2357045;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=16738099;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

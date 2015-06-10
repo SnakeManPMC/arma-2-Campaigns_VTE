@@ -1,0 +1,95 @@
+version=11;
+class Mission
+{
+	randomSeed=2711555;
+	class Intel
+	{
+		briefingName="Bra debug";
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1995;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={1934.958984,10.214999,8125.661621};
+					id=0;
+					side="WEST";
+					vehicle="VTE_acofficer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.600000;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={1936.404297,10.214999,8127.224121};
+			a=0.000000;
+			b=0.000000;
+			activationBy="ALPHA";
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			text="End Mission";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	randomSeed=5989891;
+	class Intel
+	{
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroWin
+{
+	randomSeed=4064259;
+	class Intel
+	{
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	randomSeed=541699;
+	class Intel
+	{
+		startWeather=0.120000;
+		forecastWeather=0.300000;
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

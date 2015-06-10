@@ -1,0 +1,175 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=1113603;
+	class Intel
+	{
+		briefingName="SEAL Campaign cutscene 1";
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=7065603;
+	class Intel
+	{
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={5906.582,25.964998,4940.4692};
+					id=0;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1;
+					text="seal1";
+					init="seals1=group this; seals1 setBehaviour ""SAFE"";";
+				};
+				class Item1
+				{
+					position[]={5909.8408,25.964998,4937.792};
+					id=1;
+					side="WEST";
+					vehicle="VTE_sealrto";
+					rank="ERROR";
+					skill=1;
+					text="seal4";
+				};
+				class Item2
+				{
+					position[]={5901.2915,25.964998,4937.792};
+					id=2;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					rank="SERGEANT";
+					skill=1;
+					text="seal3";
+				};
+				class Item3
+				{
+					position[]={5896.001,25.964998,4937.5005};
+					id=3;
+					side="WEST";
+					vehicle="VTE_seal";
+					rank="SERGEANT";
+					skill=1;
+					text="seal2";
+				};
+				class Item4
+				{
+					position[]={5914.2598,25.964998,4937.501};
+					id=4;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					rank="SERGEANT";
+					skill=1;
+					text="seal5";
+				};
+				class Item5
+				{
+					position[]={5919.5498,25.964998,4936.6313};
+					id=5;
+					side="WEST";
+					vehicle="VTE_sealgl";
+					rank="SERGEANT";
+					skill=1;
+					text="seal6";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5978.5044,30.272148,4811.0918};
+					id=6;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.73333299;
+					init="titleCut ["""",""black out"",0.0001]; this exec ""movie.sqs"";";
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5992.2056,27.844261,4833.0239};
+			a=0;
+			b=0;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="endcut";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=15486979;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=9797123;
+	class Intel
+	{
+	};
+};

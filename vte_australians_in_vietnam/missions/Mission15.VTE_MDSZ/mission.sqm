@@ -1,0 +1,1143 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_terrain_cfg",
+		"vte_land_cfg",
+		"CAWeapons_ZU23"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_land_cfg",
+		"CAWeapons_ZU23",
+		"vte_terrain_cfg"
+	};
+	randomSeed=14429504;
+	class Intel
+	{
+		month=7;
+		day=5;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=17;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4141.5117,3.5294335,3822.7397};
+					azimut=107.76813;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="VTE_AuSol7";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={4143.3867,3.5227234,3823.1348};
+					azimut=191.80672;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VTE_AuSAS6";
+					skill=0.60000002;
+					init="this addmagazine ""VTE_90mmrocket"";this addweapon ""VTE_90mmrecoiless"";";
+				};
+				class Item2
+				{
+					position[]={4142.3315,3.5217376,3820.5315};
+					azimut=191.80672;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="VTE_AuSAS3";
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this moveincargo e; this setface ""face3""";
+				};
+				class Item3
+				{
+					position[]={4139.3027,3.545527,3826.3691};
+					azimut=337.62299;
+					id=0;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="a";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveincargo e; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_40mm_HE""; this addweapon ""VTE_Ex41"";this addmagazine ""VTE_40mm_Buckshot""; this addmagazine ""VTE_40mm_Buckshot""; this addmagazine ""VTE_40mm_Buckshot""; this addweapon ""itemradio""; this addweapon ""itemcompass""; this addmagazine ""Mine"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE""; this addmagazine ""pipebomb""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4154.167,3.4373295,3829.0825};
+					azimut=633.27802;
+					id=4;
+					side="WEST";
+					vehicle="VTE_m113";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="c";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4147.2085,3.5203934,3829.6135};
+					combat="SAFE";
+					expActiv="c sidechat ""Here's M113, we can't get any closer than that, you've got to go in there.""";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4160.8052,3.3066792,3820.1833};
+					id=5;
+					side="WEST";
+					vehicle="VTE_jeep_mg";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4160.1777,3.663825,3796.3159};
+					azimut=13.940186;
+					id=6;
+					side="WEST";
+					vehicle="VTE_truck5tus";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4136.6157,3.5707564,3833.6099};
+					azimut=190;
+					id=7;
+					side="WEST";
+					vehicle="VTE_Armyofficer";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="q";
+					init="removeallweapons this; this addmagazine ""VTE_30Rnd_45ACP"";this addweapon ""VTE_Thompson""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this setunitpos ""up""";
+				};
+			};
+			class Waypoints
+			{
+				items=3;
+				class Item0
+				{
+					position[]={4136.6035,3.5698197,3833.1169};
+					expActiv="q switchmove ""AsigPercMstpSlowWrflDnon_AmovPercMrunSlowWrflDnon_GoGo""";
+					class Effects
+					{
+						titleType="TEXT";
+						titleEffect="PLAIN DOWN";
+						title="You've heard him, we've got to go in there. Stick to me! Go, go, go!";
+					};
+					timeoutMin=7;
+					timeoutMid=7;
+					timeoutMax=8;
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4125.1821,3.6398423,3845.2852};
+					speed="LIMITED";
+					synchronizations[]={0,1};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={4065.2825,3.7628129,3862.8127};
+					synchronizations[]={2};
+					class Effects
+					{
+						titleType="TEXT";
+						titleEffect="PLAIN DOWN";
+						title="I stay here. You take the rest!";
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4135.2871,3.5802491,3835.6987};
+					azimut=295;
+					id=8;
+					side="WEST";
+					vehicle="VTE_armywmortar";
+					leader=1;
+					skill=0.60000002;
+					init="removeallweapons this; this addmagazine ""VTE_30Rnd_45ACP"";this addweapon ""VTE_Thompson""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4130.4131,3.6091125,3840.3826};
+					azimut=295;
+					id=9;
+					side="WEST";
+					vehicle="VTE_armywmortar";
+					leader=1;
+					skill=0.60000002;
+					text="b";
+					init="removeallweapons this; this addmagazine ""VTE_30Rnd_45ACP"";this addweapon ""VTE_Thompson""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this setunitpos ""middle""";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4138.645,3.5817604,3843.1699};
+					azimut=193.71001;
+					id=10;
+					side="WEST";
+					vehicle="VTE_armywmortar";
+					leader=1;
+					skill=1;
+					text="o";
+					init="removeallweapons this; this addmagazine ""VTE_30Rnd_45ACP"";this addweapon ""VTE_Thompson""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this addmagazine ""VTE_30Rnd_45ACP""; this setunitpos ""up""";
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4138.606,3.580761,3842.5923};
+					synchronizations[]={1};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4113.5322,3.6958709,3856.3569};
+					speed="LIMITED";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item8
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4075.8877,3.7583549,3858.355};
+					azimut=-275.30899;
+					id=11;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					skill=0.2;
+				};
+			};
+		};
+		class Item9
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4059.4292,3.7658341,3865.8342};
+					azimut=110;
+					id=12;
+					side="EAST";
+					vehicle="VTE_vcsoldier14";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4062.5728,3.4192898,3824.0742};
+					azimut=24.933842;
+					id=13;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4108.0596,3.7177627,3850.3162};
+					azimut=35;
+					id=14;
+					side="EAST";
+					vehicle="VTE_vcsoldier6";
+					leader=1;
+					skill=0.2;
+				};
+			};
+		};
+		class Item12
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={3999.0571,3.8359585,3936.9016};
+					azimut=-198.256;
+					id=15;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.2;
+				};
+				class Item1
+				{
+					position[]={3995.9187,3.8351605,3939.2417};
+					azimut=-275.30899;
+					id=16;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					skill=0.2;
+				};
+				class Item2
+				{
+					position[]={3999.0056,3.8382969,3939.2915};
+					azimut=-275.30899;
+					id=17;
+					side="EAST";
+					vehicle="VTE_vcsoldier6";
+					skill=0.2;
+				};
+				class Item3
+				{
+					position[]={3998.6648,3.8369365,3938.272};
+					azimut=-198.256;
+					id=18;
+					side="EAST";
+					vehicle="VTE_vcsoldier5";
+					skill=0.2;
+				};
+				class Item4
+				{
+					position[]={3997.0527,3.8337507,3936.6982};
+					azimut=-198.256;
+					id=19;
+					side="EAST";
+					vehicle="VTE_vcsoldier12";
+					skill=0.2;
+				};
+				class Item5
+				{
+					position[]={3999.7498,3.8368933,3937.1438};
+					azimut=-198.256;
+					id=20;
+					side="EAST";
+					vehicle="VTE_vcsoldier10";
+					skill=0.2;
+				};
+				class Item6
+				{
+					position[]={3998.553,3.83723,3938.6772};
+					azimut=-198.256;
+					id=21;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					skill=0.2;
+				};
+				class Item7
+				{
+					position[]={3998.4722,3.8363733,3937.9014};
+					azimut=-198.256;
+					id=22;
+					side="EAST";
+					vehicle="VTE_vcsoldier13";
+					skill=0.2;
+				};
+				class Item8
+				{
+					position[]={3997.5024,3.8352749,3937.7725};
+					azimut=-198.256;
+					id=23;
+					side="EAST";
+					vehicle="VTE_vcsoldier13";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4036.2991,3.8034194,3903.4194};
+					placement=50;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4012.1389,11.397121,3948.3567};
+					placement=50;
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item13
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={4025.4995,4.2604094,4026.3013};
+					azimut=-267.96078;
+					id=24;
+					side="EAST";
+					vehicle="VTE_vcsoldier6";
+					leader=1;
+					skill=0.2;
+				};
+				class Item1
+				{
+					position[]={4025.0322,4.2526731,4025.3342};
+					azimut=-190.90787;
+					id=25;
+					side="EAST";
+					vehicle="VTE_vcsoldier5";
+					skill=0.2;
+				};
+				class Item2
+				{
+					position[]={4023.2307,4.2418365,4023.9795};
+					azimut=-190.90787;
+					id=26;
+					side="EAST";
+					vehicle="VTE_vcsoldier12";
+					skill=0.2;
+				};
+				class Item3
+				{
+					position[]={4025.9619,4.2426057,4024.0759};
+					azimut=-190.90787;
+					id=27;
+					side="EAST";
+					vehicle="VTE_vcsoldier10";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4058.0918,3.9540391,3978.0327};
+					placement=50;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={4039.6838,4.3188901,4033.6116};
+					placement=50;
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item14
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={3975.4915,4.3488922,4111.8701};
+					azimut=-263.79059;
+					id=28;
+					side="EAST";
+					vehicle="VTE_vcsoldier";
+					leader=1;
+					skill=0.2;
+				};
+				class Item1
+				{
+					position[]={3978.5256,4.3686247,4111.3027};
+					azimut=-263.79059;
+					id=29;
+					side="EAST";
+					vehicle="VTE_vcsoldier6";
+					skill=0.2;
+				};
+				class Item2
+				{
+					position[]={3977.9883,4.3568816,4110.3721};
+					azimut=-186.73758;
+					id=30;
+					side="EAST";
+					vehicle="VTE_vcsoldier5";
+					skill=0.2;
+				};
+				class Item3
+				{
+					position[]={3977.96,4.3599973,4110.79};
+					azimut=-186.73758;
+					id=31;
+					side="EAST";
+					vehicle="VTE_vcsoldier2";
+					skill=0.2;
+				};
+				class Item4
+				{
+					position[]={3977.7253,4.3521757,4110.0469};
+					azimut=-186.73758;
+					id=32;
+					side="EAST";
+					vehicle="VTE_vcsoldier13";
+					skill=0.2;
+				};
+				class Item5
+				{
+					position[]={3976.7495,4.3449097,4110.1143};
+					azimut=-186.73758;
+					id=33;
+					side="EAST";
+					vehicle="VTE_vcsoldier13";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={4007.5215,4.4499998,4060.791};
+					placement=50;
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={3993.2046,4.4499998,4117.5615};
+					placement=50;
+					type="CYCLE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item15
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3970.3752,3.65411,3846.4485};
+					azimut=23.734501;
+					id=34;
+					side="EAST";
+					vehicle="VTE_vcsoldier7";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item16
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={3923.3628,3.5460274,3967.4875};
+					azimut=-360.95499;
+					id=36;
+					side="EAST";
+					vehicle="VTE_nvacrew";
+					leader=1;
+					skill=0.2;
+				};
+				class Item1
+				{
+					position[]={3922.8257,3.5686691,3965.7043};
+					azimut=355;
+					id=37;
+					side="EAST";
+					vehicle="VTE_nvacrew";
+					skill=0.2;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3920.2947,3.5086124,3970.1294};
+			azimut=-47.3255;
+			id=35;
+			side="EMPTY";
+			vehicle="ZU23_Ins";
+			leader=1;
+			lock="LOCKED";
+			skill=0.60000002;
+			text="w";
+		};
+		class Item1
+		{
+			position[]={3917.947,3.4401202,3975.2175};
+			azimut=-275.30899;
+			id=38;
+			side="EMPTY";
+			vehicle="VTE_nvauaz";
+			lock="LOCKED";
+			skill=0.2;
+		};
+	};
+	class Markers
+	{
+		items=3;
+		class Item0
+		{
+			position[]={4129.3857,3.6096909,3838.6172};
+			name="S";
+			text="Start";
+			type="mil_start";
+			angle=-40.176369;
+		};
+		class Item1
+		{
+			position[]={7216.729,14.737636,5173.2793};
+			name="l";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=2000;
+			b=2000;
+		};
+		class Item2
+		{
+			position[]={3921.4453,3.5383868,3967.9277};
+			name="au";
+			text="Destroy AA";
+			type="mil_destroy";
+		};
+	};
+	class Sensors
+	{
+		items=14;
+		class Item0
+		{
+			position[]={4138.3896,3.558171,3830.8647};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=10;
+			timeoutMid=12;
+			timeoutMax=13;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				voice="VTE_man_us_c4_enemyinvisiblerangesir";
+			};
+		};
+		class Item1
+		{
+			position[]={4141.064,3.5486548,3831.4551};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=5;
+			timeoutMid=7;
+			timeoutMax=10;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				voice="VTE_man_us_c3_onourwaysir";
+			};
+		};
+		class Item2
+		{
+			position[]={4136.8262,3.5634537,3830.3787};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=15;
+			timeoutMid=16;
+			timeoutMax=17;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				voice="VTE_man_us_c2_charlieismoving";
+			};
+		};
+		class Item3
+		{
+			position[]={4144.9766,3.536586,3833.2458};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				soundEnv="Combat";
+			};
+		};
+		class Item4
+		{
+			position[]={4079.6992,3.7640393,3864.0393};
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+				soundEnv="VTE_jungle_isle_amb03";
+			};
+		};
+		class Item5
+		{
+			position[]={4116.4673,3.6841309,3853.5571};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=10;
+			class Effects
+			{
+			};
+			synchronizations[]={0};
+		};
+		class Item6
+		{
+			position[]={4064.7131,3.7622688,3862.269};
+			a=10;
+			b=10;
+			activationBy="VEHICLE";
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+			};
+			synchronizations[]={2};
+		};
+		class Item7
+		{
+			position[]={4088.4175,3.7615826,3862.1719};
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive o";
+			class Effects
+			{
+				voice="VTE_man_us_c4_underfiresir";
+			};
+		};
+		class Item8
+		{
+			position[]={4086.5669,3.755734,3855.7341};
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive q";
+			class Effects
+			{
+				voice="VTE_man_us_c3_thebulletsareflyingheresir";
+			};
+		};
+		class Item9
+		{
+			position[]={4137.3481,3.5439329,3821.6628};
+			activationBy="ANY";
+			timeoutMax=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={4138.6392,3.5407562,3822.6563};
+			activationBy="VEHICLE";
+			timeoutMin=15;
+			timeoutMid=15;
+			timeoutMax=16;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			expActiv="hint ""You've got a EX-41 grenade launcher. Make us of it and destroy everything you see""";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={3886.7427,3.75,3931.2197};
+			timeoutMin=1;
+			timeoutMid=2;
+			timeoutMax=3;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="not alive w";
+			expActiv="b globalchat ""Great work guys, great work. Now this island is under our full control. It might be small, but its the first big progression in this war. HQ out.""";
+			class Effects
+			{
+				track="VTE_paintitblack";
+			};
+		};
+		class Item12
+		{
+			position[]={3897.6135,3.75,3915.594};
+			repeating=1;
+			timeoutMin=30;
+			timeoutMid=30;
+			timeoutMax=31;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			expCond="not alive w";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={4020.4412,3.7963676,3896.3677};
+			a=120;
+			b=120;
+			activationBy="VEHICLE";
+			timeoutMin=180;
+			timeoutMid=180;
+			timeoutMax=180;
+			interruptable=1;
+			age="UNKNOWN";
+			idVehicle=0;
+			expActiv="savegame";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_land_cfg",
+		"vte_sea_cfg",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_land_cfg",
+		"vte_sea_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=5646271;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7793.2021,1.0381612,4252.5435};
+					azimut=537.09399;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="VTE_Armyofficer";
+					leader=1;
+					skill=0.43540239;
+					init="this exec ""intro.sqs""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8251.3066,2.095463,4655.6768};
+					azimut=537.09399;
+					special="NONE";
+					id=1;
+					side="EAST";
+					vehicle="VTE_t55";
+					leader=1;
+					skill=0.43540239;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={8402.958,0.95081073,4675.2725};
+					azimut=155;
+					special="NONE";
+					id=3;
+					side="EAST";
+					vehicle="VTE_sampan";
+					leader=1;
+					skill=0.43540239;
+				};
+				class Item1
+				{
+					position[]={8393.0508,0.9608947,4685.0122};
+					azimut=155;
+					special="NONE";
+					id=4;
+					side="EAST";
+					vehicle="VTE_sampan";
+					skill=0.43540239;
+				};
+				class Item2
+				{
+					position[]={8406.1865,1.2759259,4690.2212};
+					azimut=155;
+					special="NONE";
+					id=5;
+					side="EAST";
+					vehicle="VTE_sampan";
+					skill=0.43540239;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8602.4756,0.9533636,4395.1919};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8251.9551,1.588414,4610.1699};
+					azimut=537.09399;
+					special="NONE";
+					id=2;
+					side="EAST";
+					vehicle="VTE_pt76";
+					leader=1;
+					skill=0.43540239;
+				};
+			};
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7798.1016,0.95128852,4261.5396};
+			activationBy="VEHICLE";
+			repeating=1;
+			timeoutMin=10;
+			timeoutMid=11;
+			timeoutMax=12;
+			interruptable=1;
+			type="END1";
+			age="UNKNOWN";
+			idVehicle=0;
+			class Effects
+			{
+			};
+		};
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=3042529;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=1413765;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};

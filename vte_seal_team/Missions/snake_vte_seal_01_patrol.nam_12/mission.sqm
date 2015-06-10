@@ -1,0 +1,552 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_air_cfg",
+		"camisc3",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_air_cfg",
+		"camisc3",
+		"vte_terrain_cfg"
+	};
+	randomSeed=15833091;
+	class Intel
+	{
+		briefingName="SEAL Patrol";
+		month=1;
+		day=1;
+		hour=6;
+		minute=0;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={547.2937,6.7049999,6753.5469};
+					id=0;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1;
+					text="seal1";
+					init="seals1=group this; seals1 setBehaviour ""SAFE"";";
+				};
+				class Item1
+				{
+					position[]={552.2937,6.7029362,6748.5469};
+					id=1;
+					side="WEST";
+					vehicle="VTE_sealrto";
+					rank="LIEUTENANT";
+					skill=1;
+					text="seal4";
+				};
+				class Item2
+				{
+					position[]={542.2937,6.703692,6748.5469};
+					id=2;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					rank="SERGEANT";
+					skill=1;
+					text="seal3";
+				};
+				class Item3
+				{
+					position[]={537.2937,6.703692,6748.5469};
+					id=3;
+					side="WEST";
+					vehicle="VTE_seal";
+					rank="SERGEANT";
+					skill=1;
+					text="seal2";
+				};
+				class Item4
+				{
+					position[]={557.2937,6.6984358,6748.5469};
+					id=4;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					rank="SERGEANT";
+					skill=1;
+					text="seal5";
+				};
+				class Item5
+				{
+					position[]={562.2937,6.6939349,6748.5469};
+					id=5;
+					side="WEST";
+					vehicle="VTE_sealgl";
+					rank="SERGEANT";
+					skill=1;
+					text="seal6";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6495.9961,22.499998,6303.9976};
+					placement=5000;
+					id=6;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="VTE_MapCenter";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={1653.1187,26.999998,6833.4746};
+					id=7;
+					side="EAST";
+					vehicle="VTE_vcrecon";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					init="vcinf1=group this;";
+				};
+				class Item1
+				{
+					position[]={1647.1187,26.999998,6830.4746};
+					id=8;
+					side="EAST";
+					vehicle="VTE_vcrecon";
+					rank="CORPORAL";
+					skill=0.33333299;
+				};
+				class Item2
+				{
+					position[]={1650.1187,26.999998,6830.4746};
+					id=9;
+					side="EAST";
+					vehicle="VTE_vcrecon";
+					skill=0.2;
+				};
+				class Item3
+				{
+					position[]={1656.1187,26.999998,6830.4746};
+					id=10;
+					side="EAST";
+					vehicle="VTE_vcrecon";
+					skill=0.2;
+				};
+			};
+			class Waypoints
+			{
+				items=5;
+				class Item0
+				{
+					position[]={1653.1741,26.999998,6839.647};
+					placement=50;
+					combatMode="RED";
+					formation="COLUMN";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					timeoutMid=30;
+					timeoutMax=60;
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={1653.1741,26.999998,6846.6543};
+					placement=50;
+					class Effects
+					{
+					};
+					timeoutMid=30;
+					timeoutMax=60;
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={1653.1741,26.999998,6855.063};
+					placement=50;
+					class Effects
+					{
+					};
+					timeoutMid=30;
+					timeoutMax=60;
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={1653.4075,26.999998,6862.771};
+					placement=50;
+					class Effects
+					{
+					};
+					timeoutMid=30;
+					timeoutMax=60;
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={1653.4075,26.999998,6869.5444};
+					type="CYCLE";
+					class Effects
+					{
+					};
+					timeoutMid=30;
+					timeoutMax=60;
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={524.62524,6.7049999,6873.8848};
+					azimut=270;
+					id=11;
+					side="WEST";
+					vehicle="VTE_uh1";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=1;
+					text="helo1";
+					init="transp1=group this;";
+				};
+			};
+			class Waypoints
+			{
+				items=9;
+				class Item0
+				{
+					position[]={516.22113,6.7049999,6878.0225};
+					type="GETOUT";
+					combatMode="BLUE";
+					formation="WEDGE";
+					speed="FULL";
+					combat="CARELESS";
+					expCond="count units seals1 == {_x in helo1} count units seals1;";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item1
+				{
+					position[]={524.39624,6.7049999,6874.0532};
+					type="GETIN";
+					combatMode="YELLOW";
+					combat="AWARE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item2
+				{
+					position[]={503.14124,6.7049999,6873.1187};
+					expActiv="handle = [seals1,helo1,0] execVM ""PMC\PMC_helo_op.sqf"";";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item3
+				{
+					position[]={512.71765,6.7049999,6878.7241};
+					type="GETOUT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
+					position[]={513.65192,6.7049999,6884.3291};
+					synchronizations[]={0};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={512.48401,6.7049999,6878.7231};
+					type="GETIN";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={501.50616,6.7049999,6874.7529};
+					expActiv="handle = [seals1,helo1,1] execVM ""PMC\PMC_helo_op.sqf"";";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item7
+				{
+					position[]={510.14838,6.7049999,6880.8257};
+					type="GETOUT";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item8
+				{
+					position[]={510.06519,6.7049999,6866.0962};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={524.16272,6.7049999,6873.5854};
+			azimut=270;
+			id=12;
+			side="EMPTY";
+			vehicle="HeliHEmpty";
+			leader=1;
+			skill=1;
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={547.27087,6.7049999,6758.375};
+			name="start";
+			text="@STR_START";
+			type="mil_start";
+			colorName="ColorGreen";
+		};
+		class Item1
+		{
+			position[]={930.91589,-2.25,6954.7251};
+			name="target1";
+			text="@STR_TARGET1";
+			type="mil_unknown";
+			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={919.73285,2.214155,6979.9688};
+			name="insert";
+			text="@STR_INSERT";
+			type="mil_flag";
+			colorName="ColorGreen";
+		};
+		class Item3
+		{
+			position[]={925.83313,-2.25,6968.9888};
+			name="extract";
+			text="@STR_EXTRACT";
+			type="mil_pickup";
+			colorName="ColorBlue";
+		};
+	};
+	class Sensors
+	{
+		items=8;
+		class Item0
+		{
+			position[]={937.32782,2.8666589,6840.4971};
+			a=0;
+			b=0;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="mcomplete";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={918.85107,-2.25,6863.2266};
+			a=0;
+			b=0;
+			activationBy="ALPHA";
+			age="UNKNOWN";
+			text="End mission";
+			expActiv="mcomplete=true;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={937.69684,2.214155,6950.4985};
+			activationBy="VEHICLE";
+			age="UNKNOWN";
+			idVehicle=0;
+			text="west here";
+			name="patrol1";
+			expActiv="leader seals1 sideRadio ""Rpatrol1""; DonePatrol1=true;";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={944.20575,-2.25,6943.772};
+			a=0;
+			b=0;
+			timeoutMid=15;
+			timeoutMax=25;
+			age="UNKNOWN";
+			text="hq reply 1";
+			expCond="DonePatrol1";
+			expActiv="PAPABEAR sideRadio ""Rmcomplete""; PMC_objective1 setTaskState ""SUCCEEDED""; ""target1"" setMarkerColorLocal ""colorgreen""; ""target1"" setMarkerTypeLocal ""dot"";";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={515.9231,6.7049999,6885.958};
+			a=0;
+			b=0;
+			activationBy="BRAVO";
+			type="SWITCH";
+			age="UNKNOWN";
+			text="Call - Extract";
+			expActiv="leader seals1 sideRadio ""RcallExtract""; extractCalled=true;";
+			class Effects
+			{
+			};
+			synchronizations[]={0};
+		};
+		class Item5
+		{
+			position[]={517.74219,6.7049999,6884.7075};
+			a=0;
+			b=0;
+			timeoutMid=10;
+			timeoutMax=15;
+			age="UNKNOWN";
+			text="extract reply";
+			expCond="extractCalled";
+			expActiv="leader transp1 sideRadio ""RextractOnWay"";";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={925.49066,0.023513,6853.5337};
+			a=0;
+			b=0;
+			activationBy="CHARLIE";
+			repeating=1;
+			age="UNKNOWN";
+			text="Reset insert LZ location";
+			expActiv="hint ""Click on map for new insert LZ location. You can select the radio command repeatedly.""; onMapSingleClick ""handle = [_pos] execVM 'PMC\PMC_reset_insert_lz.sqf';"";";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={930.35992,0.023513,6847.5811};
+			a=0;
+			b=0;
+			activationBy="DELTA";
+			repeating=1;
+			age="UNKNOWN";
+			text="Reset Extract LZ location";
+			expActiv="hint ""Click on map for new extract LZ location. You can select the radio command repeatedly.""; onMapSingleClick ""handle = [_pos] execVM 'PMC\PMC_reset_extract_lz.sqf';"";";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=15089667;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=12298755;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=11511811;
+	class Intel
+	{
+	};
+};

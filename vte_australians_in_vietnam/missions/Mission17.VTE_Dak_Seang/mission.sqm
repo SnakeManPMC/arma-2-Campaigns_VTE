@@ -1,0 +1,317 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"camisc3",
+		"vte_weapons_cfg",
+		"vte_terrain_cfg",
+		"CABuildings"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"camisc3",
+		"vte_weapons_cfg",
+		"CABuildings",
+		"vte_terrain_cfg"
+	};
+	randomSeed=16720053;
+	class Intel
+	{
+		month=10;
+		day=12;
+		hour=10;
+		minute=5;
+	};
+	class Groups
+	{
+		items=7;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4558.292,33.34,5931.7568};
+					azimut=311.94385;
+					id=0;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="a";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveincargo e; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_40mm_HE""; this addweapon ""VTE_Ex41"";this addmagazine ""VTE_40mm_Buckshot""; this addmagazine ""VTE_40mm_Buckshot""; this addmagazine ""VTE_40mm_Buckshot""; this addweapon ""itemradio""; this addweapon ""itemcompass""; this addmagazine ""Mine"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE""; this addmagazine ""pipebomb""";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4556.4814,33.34,5933.3164};
+					azimut=133.91524;
+					id=6;
+					side="WEST";
+					vehicle="VTE_AuSAS4";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="b";
+					init="this switchmove ""sitRfl_L_BidleLoop"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4637.1753,33.299999,5860.229};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4563.8193,33.299999,5933.2144};
+					azimut=150;
+					id=7;
+					side="WEST";
+					vehicle="VTE_AuSAS1";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="r";
+					init="removeallweapons this; this switchmove ""sitRfl_L_BidleLoop""; this addweapon ""VTE_K50M""";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4561.3677,33.299999,5926.0537};
+					azimut=107.76813;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="VTE_AuSol7";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4562.188,33.299999,5923.8467};
+					azimut=191.80672;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="VTE_AuSAS3";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					init="this moveincargo e; this setface ""face3""";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4563.2427,33.299999,5926.4482};
+					azimut=191.80701;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="VTE_AuSAS6";
+					leader=1;
+					skill=0.60000002;
+					init="this addmagazine ""VTE_90mmrocket"";this addweapon ""VTE_90mmrecoiless"";";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4557.8872,33.34,5933.3643};
+					azimut=216.659;
+					id=10;
+					side="WEST";
+					vehicle="VTE_AuSAS4";
+					leader=1;
+					skill=0.60000002;
+					init="this switchmove ""sitRfl_L_BidleLoop"";";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4638.5732,33.299999,5857.4307};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=4;
+		class Item0
+		{
+			position[]={4564.2998,33.299999,5929.7729};
+			azimut=-184.67999;
+			id=4;
+			side="EMPTY";
+			vehicle="Land_Campfire_burning";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={4567.4219,33.299999,5928.605};
+			azimut=-184.67999;
+			id=5;
+			side="EMPTY";
+			vehicle="Axe_woodblock";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={4562.8506,33.299999,5941.6372};
+			azimut=-57.791801;
+			id=8;
+			side="EMPTY";
+			vehicle="VTE_WeaponBoxUS";
+			leader=1;
+			skill=0.60000002;
+			init="clearweaponcargo this;this addweaponcargo [""VTE_L1A1"",7]; this addweaponcargo [""VTE_MPL"",3]; this addweaponcargo [""VTE_ex41"",1]; this addweaponcargo [""VTE_Mosin"",1]; this addmagazinecargo [""VTE_5Rnd_mosin"",3]";
+		};
+		class Item3
+		{
+			position[]={4557.7349,33.299999,5932.5361};
+			azimut=311.94385;
+			id=9;
+			side="EMPTY";
+			vehicle="CampEast";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4567.6514,33.299999,5931.4927};
+			activationBy="ANY";
+			timeoutMax=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{ _x setVariable [""BIS_noCoreConversations"", true] } forEach allUnits;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=7905103;
+	class Intel
+	{
+		startFog=0.54571313;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=1671385;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=11020475;
+	class Intel
+	{
+		year=1965;
+		month=10;
+		hour=10;
+		minute=5;
+	};
+};
