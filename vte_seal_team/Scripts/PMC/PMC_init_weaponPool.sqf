@@ -65,7 +65,7 @@ addMagazinePool ["VTE_25Rnd_45ACP", 50];
 addMagazinePool ["VTE_25Rnd_45ACPSD", 50];
 addMagazinePool ["VTE_25Rnd_762x25", 50];
 addMagazinePool ["VTE_30Rnd_45ACP", 50];
-addMagazinePool ["VTE_30Rnd_762x43_AK", 50];
+addMagazinePool ["VTE_30Rnd_762x39_AK47", 50];
 addMagazinePool ["VTE_30Rnd_762x51_nato", 50];
 addMagazinePool ["VTE_32Rnd_9x18", 50];
 addMagazinePool ["VTE_32Rnd_9x18_sd", 50];
