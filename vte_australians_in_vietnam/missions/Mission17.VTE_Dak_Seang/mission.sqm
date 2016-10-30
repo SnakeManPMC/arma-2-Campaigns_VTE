@@ -46,7 +46,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a";
-					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveincargo e; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_40mm_HE""; this addweapon ""VTE_Ex41"";this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addweapon ""itemradio""; this addweapon ""itemcompass""; this addmagazine ""Mine"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE"";this addmagazine ""VTE_40mm_HE""; this addmagazine ""pipebomb""";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; a moveincargo e; this setIdentity ""a"";  this addweapon ""ItemMap""; this addmagazine ""VTE_1Rnd_40mm_HE""; this addweapon ""VTE_Ex41"";this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addmagazine ""VTE_1Rnd_40mm_buckshot""; this addweapon ""itemradio""; this addweapon ""itemcompass""; this addmagazine ""Mine"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE"";this addmagazine ""VTE_1Rnd_40mm_HE""; this addmagazine ""pipebomb""";
 				};
 			};
 		};
@@ -228,7 +228,7 @@ class Mission
 			vehicle="VTE_WeaponBoxUS";
 			leader=1;
 			skill=0.60000002;
-			init="clearweaponcargo this;this addweaponcargo [""VTE_L1A1"",7]; this addweaponcargo [""VTE_MPL"",3]; this addweaponcargo [""VTE_ex41"",1]; this addweaponcargo [""VTE_Mosin"",1]; this addmagazinecargo [""VTE_5Rnd_mosin"",3]";
+			init="clearweaponcargo this;this addweaponcargo [""VTE_L1A1"",7]; this addweaponcargo [""VTE_MPL"",3]; this addweaponcargo [""VTE_ex41"",1]; this addweaponcargo [""VTE_Mosin"",1]; this addmagazinecargo [""VTE_5Rnd_762x54"",3]";
 		};
 		class Item3
 		{
