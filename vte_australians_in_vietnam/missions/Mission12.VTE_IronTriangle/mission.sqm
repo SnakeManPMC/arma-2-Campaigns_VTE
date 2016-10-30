@@ -46,7 +46,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="a";
-					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; this setIdentity ""a""; this addmagazine ""VTE_8Rnd_45ACPSD""; this addweapon ""VTE_m39hp"";this addmagazine ""VTE_8Rnd_45ACPSD""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato"";  this addweapon ""itemcompass""";
+					init="removeallweapons this; this addweapon ""Binocular""; this setface ""Face2""; this setIdentity ""a""; this addmagazine ""VTE_8Rnd_9x19sd""; this addweapon ""VTE_m39hp"";this addmagazine ""VTE_8Rnd_9x19sd""; this addmagazine ""VTE_20Rnd_762x51_nato""; this addmagazine ""VTE_20Rnd_762x51_nato"";  this addweapon ""itemcompass""";
 				};
 			};
 			class Waypoints

@@ -81,7 +81,7 @@ addMagazinePool ["VTE_5Rnd_762x54", 50];
 addMagazinePool ["VTE_71Rnd_762x25", 50];
 addMagazinePool ["VTE_71Rnd_mp", 50];
 addMagazinePool ["VTE_7Rnd_1911", 50];
-addMagazinePool ["VTE_8Rnd_45ACPSD", 50];
+addMagazinePool ["VTE_8Rnd_9x19sd", 50];
 addMagazinePool ["VTE_FlareGreen_Rifle", 50];
 addMagazinePool ["VTE_FlareRed_Rifle", 50];
 addMagazinePool ["VTE_FlareWhite_Rifle", 50];
